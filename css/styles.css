@@ -1,161 +1,196 @@
-/*Chequear */
 * {
-  box-sizing: border-box;
+  position: relative;
+  margin:0;
 }
 
-@font-face {
-  font-family: "PragatiNarrow";
-  src: url("/fonts/PragatiNarrow-Regular.ttf");
-  src: url("/fonts/PragatiNarrow-Bold.ttf");
+article, figcaption, figure, footer, header, main,
+nav, section {
+  display: block;
 }
 
-html {
-  font-size: 1rem;
-  font-family:"Pragati Narrow", sans-serif;
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  margin:0;
 }
 
 body {
-  font-family: "Pragati Narrow", sans-serif;
-  font-size: 	0.875rem; /*14px*/
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 14px;
   line-height: 1.42857143;
   color: #333;
   background-color: #fff;
 }
 
-p {
-  font-size: 	1.0625rem;
-  color: #151515;
-}
-
-h2 {
-  display: block;
-  font-size: 1.5em;
-  margin-block-start: 0.83em;
-  margin-block-end: 0.83em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  font-weight: bold;
-}
-
-.nav {
-  margin-bottom: 0;
-  padding-left: 0;
-  list-style: none;
-  position:relative;
-}
-
-div {
-  display: block;
-}
-
-img {
-  vertical-align: middle;
-  border:0;
-}
-
 a {
-  background-color: transparent;
-  color: #020202;
-  text-decoration: none;/*AGREGAR UNDERLINE A LOS LINKS DE PARRAFOS */
+  text-decoration: none;
   cursor: pointer;
 }
 
-ul {
-  display: block;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
+img{
+  max-width: 100%;
+  height: auto;
 }
 
-li {
-  text-transform: uppercase;
-  display: inline;
-  line-height: 20px;
-}
-
-/*Header - Barra Menu*/
-.nav {
+.nav-primary {
+  display:inline-block;
   border-bottom: 5px solid #e5e5e5;
-  margin-bottom: 0;
-  list-style: none;
-  display: inline;
-}
-
-.navbar-logo {
-  display: inline;
   margin: 0;
-  padding: 0;
-  height: 60px;
-  width: 160px;
-  background-color: #007fc0;
+  width: 100%;
+  height: 68px;
+  background-color: #fff;
 }
 
-.navbar-categories {
-  color: #555;
-  background-color: transparent;
+.nav-primary-categories {
+  display:inline;
+  position:relative;
+  line-height: 18px;
+  margin-top: 0px;
+  margin-left: -10px;
 }
 
-.navbar-categories > li {
-  font-size: 0.8125rem;/* 13px*/
+.nav-primary-categories li{
+  display: inline;
+  vertical-align: middle;
+  padding: 24px 10px;
+  color: #4e4e4e;
+  list-style-type: none;
+  font-size: 15px;
+  font-family: "Pragati Narrow", Helvetica, sans-serif;
+  text-transform: uppercase;
   font-weight: 700;
 }
 
-.navbar-media {
-  display: inline;
+.nav-primary-categories .line {
+  position: absolute;
+  margin-top: 50px;
+  margin-left: -72px;
 }
 
+.nav-primary-search{
+  display:inline;
+  float:right;
+  position:relative;
+  margin-top: 1.6rem;
+}
 
-.navbar-categories > li {
-  position: relative;
-  padding: 24px 10px;
-  margin:0;
-  border: none;
+.nav-primary-media {
+  display:inline;
+  float:right;
+  position:relative;
+  margin-top: 1.3rem;
+}
+
+.nav-primary-media li{
+  display: inline;
+  vertical-align: middle;
+  color: #4e4e4e;
+}
+
+.nav-primary-media a{
+  display: inline;
+  vertical-align: middle;
+  color: #4e4e4e;
+  list-style-type: none;
+  line-height: 10px;
+}
+
+.horizontal-ul {
+  list-style-type: none;
 }
 
 #search{
-  content:url(/images/magnifiyng-glass.PNG);
+  display:inline;
 }
 
-/*Main Category */
-.text-uppercase {
-  text-transform: uppercase; 
+.nav-secondary{
+  position:absolute;
+  height: 39px;
+  width: 100%;
+  z-index: 1000;
+  padding-top: 4px;
+  margin-top:0;  
+  padding-left: 13px;
+  overflow: hidden;
 }
 
-span {
-  width: 42px;
-  height: 3px;
-  position:relative;
+.nav-secondary {
+  content: "";
+  height: 39px;
+  position: fixed;
+  width: 100%;
+  background-color: inherit;
 }
 
-.active-theme .span{
-  width: 42px;
-  height: 3px;
-  float: left;
-  margin-top: -25px;
-  margin-left: 10px;
+.nav-secondary a{
+  text-transform: uppercase;
+  color:#ffffff;
+  font: 700 1.125rem "Pragati Narrow",helvetica,sans-serif;
+  white-space: nowrap;
+  margin-left: 155px;
+  vertical-align:middle;
+  z-index:2000;
+}
+
+.auxiliar-white-bar{
+  width: 74%;
+  height: 80px;
+  background-color: #fff;
+  float: right;
+  margin-top: -20px;
+  border-radius: 60px 0px;
 }
 
 .color-innovation {
   background-color: #3e1e68;
 }
 
-/*Recommended Stories */
-.other-section-title span{
-  top: 45px;
+.color-reccomended {
+  background-color: #3cc4c0;
 }
 
-.article-image {
-  width: 100%;
+.color-sponsored {
+  background-color: #ef6c00;
 }
 
-.other-section-title {
-  color: #333333;
-  font-size: 1.6875rem;
-  font: 700 20px "Pragati Narrow",sans-serif;
-  text-transform: capitalize;
+span.line {
+  width: 42px;
+  height: 3px;
 }
 
-.description-box {
-  text-transform: capitalize;
-  padding-top: 20px;
+
+
+/* Downloaded Fonts: didn't worked
+
+@font-face {
+  font-family: pragati-narrow;
+  src: url("/fonts/pragati-narrow/PragatiNarrow-Regular.ttf");
 }
+
+/*For <nav>, por las dudas
+@font-face {
+  font-family: pragati-narrow;
+  src: url("/fonts/pragati-narrow/PragatiNarrow-Bold.ttf");
+  font-weight: bold;
+}
+
+/*For <subtitulo del artículo>
+@font-face {
+  font-family: pt-sans;
+  src: url("/fonts/pt-sans/PTSans-Regular.ttf");
+}
+
+/*For <titulo noticia>
+@font-face {
+  font-family: fjalla-one;
+  src: url("/fonts/fjalla-one/FjallaOne-Regular.ttf");
+}
+
+/*For <titulo noticia>
+@font-face {
+  font-family: lora;
+  src: url("/fonts/lora/static/Lora-Regular.ttf");
+}
+
+*/

@@ -6,22 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A New MIT Research Center Wants to Meld Humans With Machines</title>
     <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pragati+Narrow&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
     <header>
-        <!--Barra Menu-->
-        <nav class="nav">
-            <ul class="navbar-categories">
+        <div class="nav-primary">
+            <ul class="nav-primary-categories horizontal-ul">
                 <li>
                     <a href="https://interestingengineering.com/" title="Interesting Engineering">
                         <img class="navbar-logo" src="images/interesting-engineering.png" alt="Interesting Engineering Logo: url to homepage">
                     </a>
                 </li>
-                <li>
-                    <!--AGREGAR UPPERCASE PROPERTY 
-                                BARRITA ABAJO DEL "TEMA" ACTIVO -> CAMBIA DE COLOR SEGÚN EL TEMA!!-->
+                <li>                  
                     <a href="https://interestingengineering.com/innovation">innovation</a>
+                    <span class="color-innovation line"></span>
                 </li>
                 <li>
                     <a href="https://interestingengineering.com/science">science</a>
@@ -37,14 +39,55 @@
                 </li>
                 <!--AGREGAR ICONO DE PLAY ::BEFORE-->
                 <li>
-                    <a href="https://interestingengineering.com/video">video</a>
+                    <a href="https://interestingengineering.com/video">videos</a>
                 </li>
                 <li>
                     <a href="https://interestingengineering.com/diy">diy</a>
                 </li>
             </ul>
-            <!--class="navbar-search"-->
-            <div>
+            <ul class="nav-primary-media horizontal-ul">
+                <li>
+                    <a href="https://www.facebook.com/interestingengineering" title="Facebook" target="_blank">
+                        <img src="images/facebook-logo.png" alt="facebook-logo-url">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/IntEngineering" title="Twitter" target="_blank">
+                        <img src="images/twitter-logo.PNG" alt="twitter-logo-url">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/channel/UCEuiOszNd6msGgqsD0f9YAQ" title="Youtube" target="_blank">
+                        <img src="images/youtube-logo.PNG" alt="youtube-logo-url">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/interestingengineering/" title="Instagram" target="_blank">
+                        <img src="images/instagram-logo.PNG" alt="instagram-logo-url">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/company/interestingengineering/" title="LinkedIn" target="_blank">
+                        <img src="images/linkedin-logo.PNG" alt="linkedin-logo-url">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://interestingengineering.com/feed" title="Rss" target="_blank">
+                        <img src="images/wifi-logo.PNG" alt="Rss-logo-url">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://t.me/ieofficial" title="Telegram" target="_blank">
+                        <img src="images/telegram-logo.PNG" alt="telegram-logo-url">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://flipboard.com/@intengineering" title="Flipboard" target="_blank">
+                        <img src="images/flipboard-logo.PNG" alt="flipboard-logo-url">
+                    </a>
+                </li>
+            </ul>
+            <div class="nav-primary-search">
                 <form id="search">
                     <button type="button" name="search-toggle">
                         <i><!--agregar class, para allí, meter content: "images/magnifying-glass.png" --></i>
@@ -54,58 +97,10 @@
                                 HIDDEN y eso...-->
                 </form>
             </div>
-            <!--class="navbar-media"-->
-            <div>
-                <ul>
-                    <li>
-                        <a href="https://www.facebook.com/interestingengineering" title="Facebook" target="_blank">
-                            <img src="images/facebook-logo.png" alt="facebook-logo-url">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com/IntEngineering" title="Twitter" target="_blank">
-                            <img src="images/twitter-logo.PNG" alt="twitter-logo-url">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.youtube.com/channel/UCEuiOszNd6msGgqsD0f9YAQ" title="Youtube" target="_blank">
-                            <img src="images/youtube-logo.PNG" alt="youtube-logo-url">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/interestingengineering/" title="Instagram" target="_blank">
-                            <img src="images/instagram-logo.PNG" alt="instagram-logo-url">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/company/interestingengineering/" title="LinkedIn" target="_blank">
-                            <img src="images/linkedin-logo.PNG" alt="linkedin-logo-url">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://interestingengineering.com/feed" title="Rss" target="_blank">
-                            <img src="images/wifi-logo.PNG" alt="Rss-logo-url">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://t.me/ieofficial" title="Telegram" target="_blank">
-                            <img src="images/telegram-logo.PNG" alt="telegram-logo-url">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://flipboard.com/@intengineering" title="Flipboard" target="_blank">
-                            <img src="images/flipboard-logo.PNG" alt="flipboard-logo-url">
-                        </a>
-                    </li>
-                </ul>    
-            </div>
-        </nav>
-        <!--class="secondary-navbar"-->
-        <div>
-            <!--AGREGAR uppercase
-                        fondo
-                        manito cursor -->
+        </div>
+        <div class="nav-secondary color-innovation">
             <a href="https://interestingengineering.com/innovation">innovation</a>
+            <span class="auxiliar-white-bar"></span>
         </div>
     </header>
     <main>
@@ -287,14 +282,15 @@
     <section class="sponsored-stories">
         <div class="other-section-title">
             <h2>sponsored stories</h2>
+            <span class="color-sponsored line"></span>
         </div>
     </section>
     <!--Recommended Stories-->
-    <section class="recommended-stories">
+    <section class="recommended-stories"><!--position: absolute?-->
         <div class="other-section-title">
             <h2>recommended</h2>
             <!--para la linea de abajo-->
-            <span class="color-ice-blue-reccomended"></span>
+            <span class="color-reccomended line"></span>
         </div>
         <article> <!--Link a mi pagina de la semana 1-->
             <a class="article-image" href="week-01.html" title="Eclipses 2021">
