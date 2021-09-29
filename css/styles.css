@@ -29,15 +29,12 @@ h1,h2,h3,h4,h5,h6 {
 
 h1{
   text-transform: capitalize;
-  margin: 0.67em 0;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
 p {
   margin: 0 0 10px;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
   font: 400 17px "Lora",serif;
   color: #151515;
   line-height: 28px;
@@ -175,6 +172,10 @@ margin-left: 20px;
   z-index:2000;
 }
 
+.auxiliar-main-position{
+  height: 110px;;
+}
+
 /*------------------Colours------------------------- */
 .color-innovation {
   background-color: #3e1e68;
@@ -204,9 +205,13 @@ span.line {
 }
 
 .category-title{
-  margin-bottom: 30px;
-  font: 700 20px "Pragati Narrow",sans-serif;
+  margin-top: 0px;
+  margin-bottom: 20px;
   padding:10px 0;
+}
+
+.category-title h2{
+  font: 700 20px "Pragati Narrow",sans-serif;
   color:#5a5a5a;
 }
 
@@ -215,13 +220,17 @@ span.line {
   color:#333;
 }
 
-.main-content { 
-  width: 660px;
-  /*margin-top: 20px; me entra en confilcto con el header */
+.main-container{
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
+  width: 1014px;
+}
+
+.main-content { 
+  width: 660px;
+  margin-right: 20px;
 }
 
 .content-subtitle{
@@ -526,19 +535,63 @@ float: left;
   bottom: 0;
 }
 
-.author-name{
-  margin-right: 7px;
+.author-img{
+  display: inline-block;
   float: left;
 }
 
-.article-img img{
-  float:left;
+.author-name{
+  margin-left: 10px;
+  float: left;
+  font: 600 11px "Open Sans",sans-serif;
+}
+
+.article-date{
+  margin-left: 10px;
+  font: 600 11px "Open Sans",sans-serif;
+  color: #9a9a9a;
+  float: left;
+}
+
+.article-img{
+  float: left;
 }
 
 .article-title{
   -webkit-line-clamp: 3;
   height: 67px;
   line-height: 1.4;
+}
+
+/*---------------------------------Next Article--------------------- */
+
+.next-article-container{
+  width: 1014px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.next-article-button{
+  display: inline-block;
+  color: #000;
+  line-height: 3.3;
+  font: 700 16px "Pragati Narrow",sans-serif;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  border-color: #8b8b8b;
+  width: 100%;
+  height: 77px;
+  background-color: #fff;
+  border-bottom: #d1d1d1 5px solid;
+}
+
+.next-article-button:hover{
+  background-color:#d1d1d1;
 }
 
 /*---------------------------------Footer-------------------------- */
@@ -558,12 +611,29 @@ float: left;
 .footer-container{
   margin-right: auto;
   margin-left: auto;
-  width: 670px;
+  width: 1014px;
 }
 
 .top-footer .footer-container{
   padding-left: 0;
   padding-right: 0;
+}
+
+.footer-content nav span{
+  width: auto;
+  float: left;
+  text-align: left;
+  font: 700 24px "Pragati Narrow",sans-serif;
+  margin-right: 15px;
+  color: #2c2c2c;
+}
+
+.top-footer-2{
+  margin-top: 30px;
+}
+
+.top-footer-1 ul{
+
 }
 
 .bottom-footer .footer-container{
@@ -576,11 +646,17 @@ float: left;
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
+  margin-top: 30px;
 }
 
 
-.bottom-footer{
+.bottom-footer-container{
   height: 78px;
+  width: 1014px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .copyright{
@@ -596,17 +672,16 @@ float: left;
   float: right;
   position: relative;
   left: 0;
+  margin-top: 30px;
   margin-bottom: 0;
 }
 
-.terms-politics ul{
-  margin-top: 30px;
-  left: 0;
+
+.terms-politics ul a{
   font-size: 13px;
-  position: relative;
-  float: right;
   color: #afafaf;
-}
+  text-transform: capitalize;
+}  
 
 .horizontal-ul li{
   display: inline;
